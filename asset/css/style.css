@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+#tab {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-spacing: 0;
+}
+
+.mur {
+  background-image: url("../images/m.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banane {
+  background-image: url("../images/b.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.arrive {
+  background: url("../images/a.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.persoBas,
+.dk {
+  background-image: url("../images/dk_bas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.arriveBanane {
+  background: url("../images/b.png") left top, url("../images/a.png") right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.arriveDk {
+  background: url("../images/dk_bas.png") left top, url("../images/a.png") right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.db {
+  display: block;
+}
+
+.dn {
+  display: none;
+}
+
+#blockDisplay {
+  width: 100%;
+}
+#blockDisplay #mainWrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+#blockDisplay #mainWrap h1 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 450%;
+  color: white;
+}
+#blockDisplay #mainWrap h2 {
+  font-size: 200%;
+  margin-bottom: 1%;
+  color: white;
+}
+#blockDisplay #mainWrap #choix3level {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+#blockDisplay #mainWrap #choix3level button {
+  width: 25%;
+  border: none;
+  background: none;
+}
+#blockDisplay #mainWrap #choix3level button .imglevel {
+  border: 10px solid black;
+  border-radius: 5%;
+  width: 100%;
+  height: auto;
+}
+#blockDisplay #mainWrap #choix3level button .imglevel:hover {
+  border: 10px solid white;
+  border-radius: 5%;
+}
+
+#plateau {
+  width: 100%;
+}
+#plateau table {
+  width: 80vh;
+  height: 80vh;
+  margin: auto;
+}
+
+#boutonReloadLevel,
+#boutonbackToLevelChoice {
+  width: 300px;
+  height: 100px;
+  border: 5px solid #003300;
+  background-color: green;
+  border-radius: 100%;
+  color: white;
+  display: block;
+  margin: auto;
+  font-size: 25px;
+}
+
+#finiNiveau canvas {
+  margin: auto;
+}
+#finiNiveau h2 {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
