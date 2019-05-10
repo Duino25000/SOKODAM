@@ -1,63 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>SOKOBAN</title>
-	<meta name="author" content="Igal Ilmi Amir, Scheriff El Ghouati, Sébastien Dubel, Richard Meuret">
-	<link rel="icon" type="image/png" sizes="32x32" href="asset/images/favicon_32x32.png">
-	<meta name="description" content="Jeu sokoban avec 3 niveaux de difficultés.
-	Les différents niveaux ont des difficultés graduelles.
-	">
-	<link rel="stylesheet" href="asset/css/style.css">
-</head>
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>SOKOBAN</title>
+		<meta name="author" content="Igal Ilmi Amir, Scheriff El Ghouati, Sébastien Dubel, Richard Meuret">
+		<link rel="icon" type="image/png" sizes="32x32" href="asset/images/favicon_32x32.png">
+		<meta name="description" content="Jeu sokoban avec 3 niveaux de difficultés.Les différents niveaux ont des difficultés graduelles.">
+		<link rel="stylesheet" href="asset/css/style.css">
+	</head>
 
-<body>
+	<body>
 
-	<div id="blockDisplay" class="db">
-		<div id="mainWrap">
-			<h1>SOKOBAN</h1>
-			<h2>Choisissez un level</h2>
+		<div id="blockDisplay" class="db">
 
-			<div id="choix3level">
-				<button id="boutonLevel1"><img src="asset/images/level1_7x7.png" class="imglevel" alt="Screenshot level 1"
-						height="345" width="345" id="level" /></button>
+			<div id="mainWrap">
 
-				<button disabled="true" id="boutonLevel2"><img src="asset/images/level2_10x10.png" class="imglevel"
-						alt="Screenshot level 2" height="345" width="345" /></button>
+				<h1>SOKOBAN</h1>
+				<h2>Choisissez un level</h2>
 
-				<button disabled="true" id="boutonLevel3"><img src="asset/images/level3_13x13.png" class="imglevel"
-						alt="Screenshot level 3" height="345" width="345" /></button>
+				<div id="choix3level">
+
+					<button id="boutonLevel1">
+						
+						<img src="asset/images/level1_7x7.png" class="imglevel" alt="Screenshot level 1"
+						height="345" width="345" id="level" />
+					</button>
+
+					<button disabled="true" id="boutonLevel2">
+						
+						<img src="asset/images/level2_10x10.png" class="imglevel"
+						alt="Screenshot level 2" height="345" width="345" />
+					</button>
+
+					<button disabled="true" id="boutonLevel3">
+						
+						<img src="asset/images/level3_13x13.png" class="imglevel"
+						alt="Screenshot level 3" height="345" width="345" />
+					</button>
+				</div>
 			</div>
-
 		</div>
-		<!--#mainWrap-->
-	</div>
 
-	<div id="plateau" class="dn">
-		<table id="tab"></table>
-		<!-- <h3>Il reste <span id="compteur">0</span> banane(s).</h3>
-		<h3>Nombre de coup: <span id="compteur2">0</span>.</h3> -->
-		<button id="boutonReloadLevel">Recharger niveau</button>
-	</div>
+		<div id="plateau" class="dn">
 
-	<div id="finiNiveau" class="dn">
-		<canvas id="dk_win"></canvas>
-		<h2 id="victoire"></h2>
-		<button id="boutonbackToLevelChoice">Choisir un niveau</button>
-		<!-- <button id="niveauSuivant" class="db">
-		Niveau suivant
-		<br>
-		<img src="asset/images/next.png" height="32" width="32" alt="image d'une fleche">
-		</button> -->
-	</div>
+			<table id="tab"></table>
+			<!-- <h3>Il reste <span id="compteur">0</span> banane(s).</h3>
+			<h3>Nombre de coup: <span id="compteur2">0</span>.</h3> -->
+			<button id="boutonReloadLevel">Recharger niveau</button>
+		</div>
 
+		<div id="finiNiveau" class="dn">
 
-	<script src="asset/js/level.js"></script>
-	<script src="asset/js/dk_anim.js"></script>
-	<script src="asset/js/script.js"></script>
-</body>
+			<canvas id="dk_win"></canvas>
+			<h2 id="victoire"></h2>
+			<button id="boutonbackToLevelChoice">Choisir un niveau</button>
+			<!-- <button id="niveauSuivant" class="db">
+			Niveau suivant
+			<br>
+			<img src="asset/images/next.png" height="32" width="32" alt="image d'une fleche">
+			</button> -->
+		</div>
+		<!-- TEST GIT  -->
 
+		<script src="asset/js/level.js"></script>
+		<script src="asset/js/dk_anim.js"></script>
+		<script src="asset/js/script.js"></script>
+	</body>
 </html>
